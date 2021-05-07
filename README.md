@@ -1,5 +1,6 @@
 # vue3-chrome-ext-template
 Vue3 Chrome Extension Template
+Vue3 谷歌插件开发模板
 
 ## Project setup
 ```
