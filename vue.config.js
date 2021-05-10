@@ -1,36 +1,24 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
 
-const pagesObj = {}
+const pages = {}
 
-const chromeName = ['popup', 'options']
+const chromeName = ['popup', 'background', 'options', 'content']
 
 chromeName.forEach(name => {
-  pagesObj[name] = {
-    entry: `src/pages/${name}/index.js`,
+  pages[name] = {
+    entry: `src/pages/${name}/main.js`,
     template: 'public/index.html',
     filename: `${name}.html`
   }
 })
 
-const plugins =
-  process.env.NODE_ENV === 'production'
-    ? [
-      {
-        from: path.resolve('src/manifest.production.json'),
-        to: `${path.resolve('dist')}/manifest.json`
-      }
-    ]
-    : [
-      {
-        from: path.resolve('src/manifest.development.json'),
-        to: `${path.resolve('dist')}/manifest.json`
-      }
-    ]
-
 module.exports = {
-  pages: pagesObj,
+  pages,
   configureWebpack: {
-    plugins: [CopyWebpackPlugin(plugins)]
+    plugins: [CopyWebpackPlugin([{
+      from: path.resolve('manifest.json'),
+      to: `${path.resolve('dist')}/manifest.json`
+    }])]
   }
 }
