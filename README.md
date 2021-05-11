@@ -2,23 +2,16 @@
 Vue3 Chrome Extension Template
 Vue3 谷歌插件开发模板
 
-## Project setup
-```
-yarn install
-```
+[手摸手 带你准备 vue3 谷歌扩展/谷歌插件 开发环境](https://www.cinob.cn/blogs/2021/050701.html)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### 目录结构
 
-### Compiles and minifies for production
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+├─pages
+  ├─background  // 常驻后台的插件脚本
+  ├─content     // 注入页面的脚本 (可以获取页面dom...)
+  ├─options     // 插件的配置页
+  └─popup       // 点击右上角插件图标展示的页面
+├─manifest.json // 谷歌插件配置
 ```
 
