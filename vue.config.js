@@ -15,6 +15,7 @@ chromeName.forEach(name => {
 
 module.exports = {
   pages,
+  filenameHashing: false,
   configureWebpack: {
     plugins: [CopyWebpackPlugin([{
       from: path.resolve('manifest.json'),
