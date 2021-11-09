@@ -2,17 +2,6 @@
 Vue3 Chrome Extension Template
 Vue3 谷歌插件开发模板
 
-### 目录结构
-
-```
-├─pages
-  ├─background  // 常驻后台的插件脚本
-  ├─content     // 注入页面的脚本 (可以获取页面dom...)
-  ├─options     // 插件的配置页
-  └─popup       // 点击右上角插件图标展示的页面
-├─manifest.json // 谷歌插件配置
-```
-
 ## 参考文章链接
 
 - [ 谷歌插件开发文档 ](https://developer.chrome.com/docs/extensions/mv3/ "谷歌插件开发文档")
@@ -58,5 +47,4 @@ Vue3 谷歌插件开发模板
  - 点击谷歌浏览器右上角三个点 -> 更多工具 -> 扩展程序 -> 打开右上角开发者模式 -> 加载已解压的扩展程序 -> 选择我们项目目录下dist文件夹 -> 启用插件并更新插件列表
   
  - 此时浏览器右上角插件列表已经成功加载出我们名为`chrome-ext`的插件
- - 完美收工，快去试试吧！
 
