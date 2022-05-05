@@ -8,8 +8,11 @@ Vue3 谷歌插件开发模板
 - [【干货】Chrome插件(扩展)开发全攻略](https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html "【干货】Chrome插件(扩展)开发全攻略")
 
 ## Let's go
-  ### 克隆[vue3-chrome-ext-template](https://github.com/cinob/vue3-chrome-ext-template "vue3-chrome-ext-template")模板
+  ### 下载[vue3-chrome-ext-template](https://github.com/cinob/vue3-chrome-ext-template "vue3-chrome-ext-template")模板
   ```bash
+  // 纯净模板
+  npx degit cinob/vue3-chrome-ext-template your-program
+  // 克隆代码
   git clone https://github.com/cinob/vue3-chrome-ext-template.git
   ```
   
