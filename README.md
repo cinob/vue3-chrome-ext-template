@@ -12,7 +12,7 @@ Vue3 谷歌插件开发模板
   ```bash
   // 纯净模板
   npx degit cinob/vue3-chrome-ext-template your-program
-  // 克隆代码
+  // or 克隆代码
   git clone https://github.com/cinob/vue3-chrome-ext-template.git
   ```
   
