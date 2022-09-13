@@ -19,19 +19,15 @@ Vue3 谷歌插件开发模板
   ### 进入项目目录，安装依赖包
   
   ```bash
-  // npm
-  npm install
-  // yarn
-  yarn
+  // pnpm
+  pnpm install
   ```
   
   ### 启动项目
   
   ```bash
-  // npm
-  npm run serve
-  // yarn
-  yarn serve
+  // pnpm
+  pnpm run servep
   ```
   
   ### 目录结构
